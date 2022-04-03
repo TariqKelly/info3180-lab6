@@ -5,13 +5,13 @@
                 <label for="search" class="visually-hidden">Search</label>
 
                 <input type="search" name="search" v-model="searchTerm" id="search" class="form-control mb-2 mr-sm-2" placeholder="Enter search term here">
-                <button class="btn btn-primary mb-2">Search</button>
+                <button class="btn btn-success mb-2">Search</button>
                 
             </div>
-            <p class="fs-5 fw-light text-secondary">You are searching for: {{ searchTerm }}</p>
+            <p class="fs-5 fw-light text-secondary text-center">You are searching for: {{ searchTerm }}</p>
         </form>
 
-        <div v-for="article in articles" class="col-sm-4 mb-5">
+        <div v-for="article in articles" class="col-sm-6 col-md-4 mb-5">
             <div class="card w-77 h-100 border-top-0 border-start-0 border-end-0 border-bottom border-5 border-success shadow">
                 <img :src="article.urlToImage" alt="article image" class="card-img-top"/>
                 <div class="card-body">

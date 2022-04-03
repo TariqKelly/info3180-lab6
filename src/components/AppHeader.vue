@@ -1,8 +1,8 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">VueJS App</a>
+        <a class="navbar-brand" href="/">Lab 6</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -21,6 +21,9 @@
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/about">About</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/news">News</RouterLink>
             </li>
           </ul>
         </div>
